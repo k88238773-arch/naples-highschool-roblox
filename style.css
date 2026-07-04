@@ -1,0 +1,193 @@
+/* Core Layout Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #030712; /* Pitch black background */
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* 1. Header & Navigation */
+.main-header {
+    background-color: #0c4da2; /* Bright Classic Blue */
+    width: 100%;
+    padding: 22px 0;
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 28px;
+    transition: opacity 0.15s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.85;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 2px;
+}
+
+/* 2. Home Page Hero Styling */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.hero-title {
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: #3b82f6;
+    margin-bottom: 24px;
+}
+
+.hero-meta {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #0c4da2;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 14px 44px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.hero-btn:hover {
+    background-color: #125cbdf8;
+}
+
+/* 3. Roster Content Layout Container */
+.content-wrapper {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.roster-section {
+    text-align: center;
+}
+
+.page-title {
+    font-size: 54px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+}
+
+.page-subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3b82f6;
+    margin-bottom: 40px;
+}
+
+/* Premium Dark Table UI */
+.table-container {
+    background-color: #0b111e;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 16px 24px;
+    border-bottom: 1px solid #1e293b;
+}
+
+td {
+    padding: 16px 24px;
+    border-bottom: 1px solid #141e30;
+    color: #e2e8f0;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+tr:hover td {
+    background-color: #111a2e;
+}
+
+/* Dynamic Table Styling Hooks */
+.jersey-num {
+    font-weight: 800;
+    color: #3b82f6;
+}
+
+.player-name {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.player-avatar {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #3b82f6;
+    display: block;
+}

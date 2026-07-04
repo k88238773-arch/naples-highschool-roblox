@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naples High School Football - Tickets</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Table Styling matching your screenshot layout */
+        .tickets-container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        .tickets-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #0b1329;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            margin-top: 30px;
+        }
+        .tickets-table th, .tickets-table td {
+            padding: 18px;
+            text-align: left;
+            border-bottom: 1px solid #1e293b;
+            font-size: 14px;
+        }
+        .tickets-table th {
+            background-color: #111a33;
+            color: #64748b;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+        .tickets-table td {
+            color: #e2e8f0;
+        }
+        .btn-ticket {
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            display: inline-block;
+            transition: background 0.2s;
+        }
+        .btn-ticket:hover {
+            background-color: #1d4ed8;
+        }
+        .btn-soon {
+            background-color: #1e293b;
+            color: #64748b;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            display: inline-block;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">Naples High School</div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="roster.html">Roster</a>
+                <a href="tickets.html" class="active">Tickets</a>
+                <a href="news.html">News</a>
+                <a href="gallery.html">Gallery</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-wrapper" style="margin-top: 100px;">
+        <div class="tickets-container">
+            <h1 class="page-title" style="font-size: 36px; font-weight: 800; margin-bottom: 5px;">GAME TICKETS</h1>
+            <p style="color: #3b82f6; font-weight: 600; letter-spacing: 0.5px;">Secure Your Seats For The Season</p>
+
+            <table class="tickets-table">
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Date & Time</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Week 1 vs. Curtis Warrior</strong></td>
+                        <td>Wednesday, July 15 • 7:00 PM</td>
+                        <td>Home (Naples Field)</td>
+                        <td><a href="purchase.html" class="btn-ticket">Buy Tickets</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Week 2 vs. Unknown</strong></td>
+                        <td>Wednesday, July 22 • 7:30 PM</td>
+                        <td>Home (Naples Field)</td>
+                        <td><span class="btn-soon">Coming Soon</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+</body>
+</html>
